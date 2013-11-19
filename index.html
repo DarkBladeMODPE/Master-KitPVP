@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Master-kitpvp by DarkBladeMODPE</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/DarkBladeMODPE/Master-KitPVP">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Master-kitpvp</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/DarkBladeMODPE/Master-KitPVP/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/DarkBladeMODPE/Master-KitPVP/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>ModPE.setItem(167, 3, 7, "Diamond_Kit");
+ModPE.setItem(169, 2, 14, "Iron_Kit");
+function useItem(x,y,z,itemId,blockId) //the hook we will use
+{
+if (itemId==0)//item is nothing
+{
+addItemInventory(167,1);//Add item
+addItemInventory(169, 1);//Add item
+}
+else if (itemId==167)//diamond kit
+{
+addItemInventory (276, 1);//sword
+addItemInventory (310, 1);//armour
+addItemInventory (311, 1); //armour
+addItemInventory (312, 1);//armour
+addItemInventory (313, 1);//boots
+}
+else if (itemId==169)//ieon kit
+{
+addItemInventory (267, 1);//sword
+addItemInventory (306, 1);//helm
+addItemInventory (307, 1);//zzz
+addItemInventory (308, 1);//zzz
+addItemInventory (309, 1);//zzzz
+}
+}</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/DarkBladeMODPE">DarkBladeMODPE</a> can be found on <a href="https://github.com/DarkBladeMODPE/Master-KitPVP">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
